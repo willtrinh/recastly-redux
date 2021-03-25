@@ -9,7 +9,11 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => ({});
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeVideo: (video) => dispatch(changeVideo(video))
+  };
+};
 var VideoPlayerContainer = connect(mapStateToProps, mapDispatchToProps)(VideoPlayer);
 
 export default VideoPlayerContainer;

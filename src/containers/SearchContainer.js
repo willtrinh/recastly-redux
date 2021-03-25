@@ -8,11 +8,16 @@ import handleSearchChange from '../actions/search.js';
 // dispatchers with your search component props.
 //HINT: use react-redux 'connect' method to generate a container component from
 //state and dispatch mappings.
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => {
+  return {
+    currentVideo: state.currentVideo,
+    videoList: state.videoList
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleSearchInputChange: (video) => dispatch(handleSearchChange(video))
+    handleSearchInputChange: (q) => dispatch(handleSearchChange(q))
   };
 };
 

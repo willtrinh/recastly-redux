@@ -4,7 +4,6 @@ import changeVideo from './../actions/currentVideo.js';
 
 const mapStateToProps = (state) => {
   return {
-    // take in the state from redux store and makes it available via connect
     videos: state.videoList
   };
 };
