@@ -1,13 +1,7 @@
 import React from 'react';
-import changeVideo from '../actions/currentVideo.js';
-import changeVideoList from '../actions/videoList.js';
-import exampleVideoData from '../data/exampleVideoData.js';
-import store from '../store/store.js';
-import search from '../actions/search.js';
 import VideoListContainer from '../containers/VideoListContainer.js';
 import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
 import SearchContainer from '../containers/SearchContainer.js';
-
 
 const App = (props) => (
   <div>

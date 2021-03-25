@@ -7,9 +7,9 @@
   "private": true,
   "scripts": {
     "test": "live-server --open=./SpecRunner.html --port=8081",
-    "start": "live-server",
+    "start": "live-server --open=./SpecRunner.html --open=./ --port=8081",
     "build": "webpack -d --watch",
-    "bundle": "npm start & npm test & npm run build"
+    "bundle": "npm start & npm run build"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
